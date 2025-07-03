@@ -1,2 +1,2 @@
 # home-made-pickles-and-snacks
-it is an aws project creating an website 
+This is an AWS project for creating a website
