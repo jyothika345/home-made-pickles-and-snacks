@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Old Flavours – Homemade Pickles & Snacks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Old Flavours – Homemade Pickles & Snacks</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#veg">Veg Pickles</a>
+      <a href="#nonveg">Non-Veg Pickles</a>
+      <a href="#snacks">Snacks</a>
+      <a href="cart.html">🛒 View Cart</a>
+    </nav>
+  </header>
+
+  <section id="home" class="banner">
+    <h2>Welcome to the Taste of Tradition!</h2>
+    <p>Pure, Authentic, Homemade – Pickles & Snacks</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We prepare homemade pickles and snacks using time-honored recipes, pure ingredients, and no preservatives. Every bite brings back the old flavors of our grandmothers’ kitchens.</p>
+  </section>
+
+  <!-- Veg Pickles -->
+  <section id="veg">
+    <h2>Veg Pickles</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/Mango-Pickle.jpg" alt="Mango Pickle">
+        <h3>Mango Pickle</h3>
+        <p>Spicy Andhra-style mango pickle.</p>
+        <p>₹120</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Mango Pickle', 120)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Lemon-Pickle.jpg" alt="Lemon Pickle">
+        <h3>Lemon Pickle</h3>
+        <p>Citrus-rich homemade lemon pickle.</p>
+        <p>₹100</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Lemon Pickle', 100)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Non-Veg Pickles -->
+  <section id="nonveg">
+    <h2>Non-Veg Pickles</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/Chicken-Pickle.jpg" alt="Chicken Pickle">
+        <h3>Chicken Pickle</h3>
+        <p>Fiery chicken pickle made with ghee and spices.</p>
+        <p>₹180</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Chicken Pickle', 180)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Prawn-Pickle.jpg" alt="Prawn Pickle">
+        <h3>Prawn Pickle</h3>
+        <p>Juicy prawns soaked in homemade masala mix.</p>
+        <p>₹200</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Prawn Pickle', 200)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Fish-Pickle.jpg" alt="Fish Pickle">
+        <h3>Fish Pickle</h3>
+        <p>Flaky fish chunks blended in tangy oil base.</p>
+        <p>₹160</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Fish Pickle', 160)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Snacks -->
+  <section id="snacks">
+    <h2>Snacks</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/Muruku.jpg" alt="Muruku">
+        <h3>Muruku</h3>
+        <p>Crispy and crunchy traditional snack.</p>
+        <p>₹80</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Muruku', 80)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Banana-Chips.jpg" alt="Banana Chips">
+        <h3>Banana Chips</h3>
+        <p>Thinly sliced and fried banana chips.</p>
+        <p>₹60</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Banana Chips', 60)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Ragi-Laddu.jpg" alt="Ragi Laddu">
+        <h3>Ragi Laddu</h3>
+        <p>Nutritious laddus made from ragi flour.</p>
+        <p>₹50</p>
+        <div class="quantity-control">
+          <button onclick="decreaseQuantity(this)">−</button>
+          <input type="number" value="1" min="1" readonly />
+          <button onclick="increaseQuantity(this)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'Ragi Laddu', 50)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Contact Us</h3>
+    <p>📞 +91-9876543210</p>
+    <p>📧 picklesnacks@example.com</p>
+    <p>&copy; 2025 Old Flavours – Taste the Best</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

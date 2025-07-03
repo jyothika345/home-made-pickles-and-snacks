@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart – Old Flavours</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="loadCart()">
+  <header>
+    <h1>Your Cart – Old Flavours</h1>
+    <nav>
+      <a href="index.html">← Back to Shop</a>
+    </nav>
+  </header>
+
+  <section id="cart-section">
+    <h2>Cart Items</h2>
+    <ul id="cart-items"></ul>
+    <p id="total"></p>
+  </section>
+
+  <section id="customer-form">
+    <h2>Customer Details</h2>
+    <form id="orderForm" onsubmit="submitOrder(event)">
+      <label>Name:<br><input type="text" required></label><br/>
+      <label>Address:<br><textarea required></textarea></label><br/>
+      <label>Phone:<br><input type="tel" required></label><br/>
+      <label>Email:<br><input type="email" required></label><br/>
+      <button type="submit">Order Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Old Flavours – Taste the Best</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function submitOrder(event) {
+      event.preventDefault();
+      alert("Your order has been placed successfully!");
+      clearCart();
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

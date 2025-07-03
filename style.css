@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+}
+
+header {
+  background-color:#790909;
+  color: rgb(247, 240, 240);
+  padding: 20px;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #f7eeee;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+.banner {
+  background: url("images/background.jpg") no-repeat center center/cover;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.banner h2 {
+  background: rgba(248, 246, 246, 0.909);
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #100101;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 230px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a52a2a;
+}
+
+footer {
+  background-color: #f3e5ab;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Cart Page */
+#cart-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+#cart-section ul li {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+#cart-section #total {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#customer-form {
+  background: #fff0e6;
+  padding: 30px;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 2px solid #e0c5a7;
+}
+
+#customer-form form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#customer-form input,
+#customer-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#customer-form button {
+  width: 100%;
+  font-size: 16px;
+}
