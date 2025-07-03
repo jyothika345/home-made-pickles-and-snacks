@@ -18,5 +18,5 @@ def products():
     ])
 
 if __name__ == "__main__":
-    print("🟢 Backend running successfully on http://127.0.0.1:5000/")
+    print("🟢 Backend running successfully on http://127.0.0.0:5000/")
     app.run(debug=True)
