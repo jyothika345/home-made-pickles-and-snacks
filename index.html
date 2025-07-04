@@ -18,6 +18,26 @@
     </nav>
   </header>
 
+  <!-- Login & Signup Controls -->
+  <div id="auth-container" style="text-align:center; margin: 20px;">
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showSignup()">Sign Up</button>
+    <div id="welcome-msg" style="display:none;"></div>
+    <button onclick="logout()" id="logout-btn" style="display:none;">Logout</button>
+  </div>
+
+  <!-- Login & Signup Modal -->
+  <div id="auth-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+    <div style="background:#fff; padding:20px; margin:100px auto; width:300px; border-radius:8px;">
+      <h3 id="auth-title">Login</h3>
+      <input id="auth-name" type="text" placeholder="Name" style="display:none; width:100%; margin-bottom:10px;" />
+      <input id="auth-email" type="email" placeholder="Email" style="width:100%; margin-bottom:10px;" />
+      <input id="auth-password" type="password" placeholder="Password" style="width:100%; margin-bottom:10px;" />
+      <button onclick="submitAuth()">Submit</button>
+      <button onclick="hideAuth()" style="margin-left:10px;">Cancel</button>
+    </div>
+  </div>
+
   <section id="home" class="banner">
     <h2>Welcome to the Taste of Tradition!</h2>
     <p>Pure, Authentic, Homemade – Pickles & Snacks</p>
@@ -39,7 +59,7 @@
         <p>₹120</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Mango Pickle', 120)">Add to Cart</button>
@@ -52,7 +72,7 @@
         <p>₹100</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Lemon Pickle', 100)">Add to Cart</button>
@@ -71,7 +91,7 @@
         <p>₹180</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Chicken Pickle', 180)">Add to Cart</button>
@@ -84,7 +104,7 @@
         <p>₹200</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Prawn Pickle', 200)">Add to Cart</button>
@@ -97,7 +117,7 @@
         <p>₹160</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Fish Pickle', 160)">Add to Cart</button>
@@ -116,7 +136,7 @@
         <p>₹80</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Muruku', 80)">Add to Cart</button>
@@ -129,7 +149,7 @@
         <p>₹60</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Banana Chips', 60)">Add to Cart</button>
@@ -142,7 +162,7 @@
         <p>₹50</p>
         <div class="quantity-control">
           <button onclick="decreaseQuantity(this)">−</button>
-          <input type="number" value="1" min="1" readonly />
+          <input type="number" value="1" readonly />
           <button onclick="increaseQuantity(this)">+</button>
         </div>
         <button onclick="addToCart(this, 'Ragi Laddu', 50)">Add to Cart</button>
@@ -152,8 +172,12 @@
 
   <footer>
     <h3>Contact Us</h3>
-    <p>📞 +91-9876543210</p>
-    <p>📧 picklesnacks@example.com</p>
+    <p>📞 <a href="tel:+919866158340">+91-9866158340</a></p>
+    <p>📧 <a href="mailto:oldflavours@gmail.com">oldflavours@gmail.com</a></p>
+    <p>
+      <a href="tel:+919866158340"><button>📞 Call Now</button></a>
+      <a href="https://wa.me/919866158340" target="_blank"><button>💬 WhatsApp</button></a>
+    </p>
     <p>&copy; 2025 Old Flavours – Taste the Best</p>
   </footer>
 
